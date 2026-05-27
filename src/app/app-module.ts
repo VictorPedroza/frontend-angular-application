@@ -1,9 +1,11 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
 
 import { App } from './app';
 import { SharedModule } from './shared/shared-module';
 import { AppRoutingModule } from './app-routing-module';
+import { AuthModule } from './modules/auth/auth-module';
 
 @NgModule({
   declarations: [
@@ -12,10 +14,12 @@ import { AppRoutingModule } from './app-routing-module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    AuthModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
+    provideHttpClient()
   ],
   bootstrap: [App]
 })
