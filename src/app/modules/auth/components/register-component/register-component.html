@@ -1,0 +1,14 @@
+<div class="">
+  <h1>Register</h1>
+  <form [formGroup]="registerForm">
+   <div class="mb-3">
+      <label  class="">Usuáio</label>
+      <input formControlName="username"  type="text">
+    </div>
+    <div class="mb-3">
+      <label class="">Senha</label>
+      <input formControlName="password" type="password">
+    </div>
+    <button type="submit" class="" (click)="register()">Registrar</button>
+  </form>
+</div>
