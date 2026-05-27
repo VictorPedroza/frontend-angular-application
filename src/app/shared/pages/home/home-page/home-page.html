@@ -1,0 +1,91 @@
+<!-- Banner de Boas-Vindas / Destaque principal -->
+<div class="relative bg-linear-to-r from-slate-900 via-indigo-950 to-slate-900 text-white overflow-hidden mb-8 border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative z-10">
+    <div class="max-w-2xl">
+      <span class="bg-green-500/10 text-green-400 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-green-500/20">
+        World Cup 2026
+      </span>
+      <h2 class="text-3xl md:text-5xl font-black tracking-tight mt-4">
+        Sua Copa do Mundo em <span class="font-black tracking-wider bg-linear-to-r from-green-600 to-yellow-400 bg-clip-text text-transparent">um só lugar.</span>
+      </h2>
+      <p class="text-gray-400 mt-4 text-base md:text-lg">
+        Gerencie suas figurinhas digitais e faça seus palpites nos jogos do dia
+      </p>
+    </div>
+  </div>
+  <!-- Detalhe decorativo sutil de fundo -->
+  <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] bg-size-[16px_16px]"></div>
+</div>
+
+<!-- Conteúdo Centralizado da Página -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+
+  <!-- Grid Principal dividindo os Módulos do Projeto -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- CARD: MÓDULO DE PALPITES (BET) -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-yellow-500/40 transition-all shadow-xl group">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-500 text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+          📊
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Arena de Palpites</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Aposte nos placares, ganhe pontos por acertos exatos e suba no Bolão oficial. Veja as estatísticas das seleções antes de confirmar seu palpite.
+        </p>
+
+        <!-- Pequeno widget estático informativo interno do card -->
+        <div class="bg-slate-950/60 rounded-xl p-4 border border-slate-850 mb-6">
+          <div class="flex items-center justify-between text-xs text-gray-500 mb-2 font-medium">
+            <span>PRÓXIMO JOGO EM DESTAQUE</span>
+            <span class="text-yellow-400 animate-pulse">● AO VIVO HOJE</span>
+          </div>
+          <div class="flex items-center justify-center space-x-4 text-white font-semibold text-sm">
+            <span>🇧🇷 Brasil</span>
+            <span class="bg-slate-800 px-2 py-0.5 rounded text-yellow-500 font-mono">vs</span>
+            <span>🇫🇷 França</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        routerLink="/bet"
+        class="w-full bg-yellow-500 hover:bg-yellow-600 text-slate-950 font-bold py-3 px-4 rounded-xl transition-colors flex items-center justify-center space-x-2">
+        <span>Palpitar Agora</span>
+        <span class="text-xs">➔</span>
+      </button>
+    </div>
+
+    <!-- CARD: MÓDULO DE ÁLBUM DE FIGURINHAS -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-green-500/40 transition-all shadow-xl group">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+          ✨
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Álbum Virtual</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Abra pacotes diários, colecione os craques das 48 seleções e gerencie seus cromos repetidos para trocar com outros colecionadores.
+        </p>
+
+        <!-- Pequeno widget de progresso interno do card -->
+        <div class="bg-slate-950/60 rounded-xl p-4 border border-slate-850 mb-6">
+          <div class="flex justify-between text-xs font-medium text-gray-500 mb-2">
+            <span>SEU PROGRESSO DO ÁLBUM</span>
+            <span class="text-green-400">0% Concluído</span>
+          </div>
+          <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+            <div class="bg-green-500 h-full rounded-full" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        routerLink="/album"
+        class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl transition-colors flex items-center justify-center space-x-2">
+        <span>Abrir Meu Álbum</span>
+        <span class="text-xs">➔</span>
+      </button>
+    </div>
+
+  </div>
+</main>
